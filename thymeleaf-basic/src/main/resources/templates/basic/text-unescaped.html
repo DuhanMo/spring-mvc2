@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li> th:text 사용<span th:text="${data}"></span></li>
+    <li> th:utext 사용<span th:utext="${data}"></span> </li>
+</ul>
+<ul>
+    <li> <span>[[...]] = [[${data}]]</span></li>
+    <li> <span>[(...)] = [(${data})]</span> </li>
+</ul>
+</body>
+</html>
