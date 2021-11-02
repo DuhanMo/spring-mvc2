@@ -6,7 +6,11 @@ import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
-//@Component
+/**
+ * 서블릿이 제공하는 에러페이지
+ * 내가 직접 처리해주는 방법(Html, API 두개 다 가능(
+ */
+@Component
 public class WebServerCustomizer implements WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
 
     @Override
