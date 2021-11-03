@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * 서블릿이 제공하는 에러페이지
  * 내가 직접 처리해주는 방법(Html, API 두개 다 가능(
  */
-@Component
+//@Component
 public class WebServerCustomizer implements WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
 
     @Override
