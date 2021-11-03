@@ -5,10 +5,7 @@ import hello.exception.exception.UserException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -32,6 +29,11 @@ public class ApiExceptionController {
     @GetMapping("/response-status-ex1")
     public String responseStatusEx1() {
         throw new BadRequestException();
+    }
+
+    @GetMapping("/default-handler-ex")
+    public String defaultException(@RequestParam Integer data) {
+        return "ok";
     }
 
     @Data
